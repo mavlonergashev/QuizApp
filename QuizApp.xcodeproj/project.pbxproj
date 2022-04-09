@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0471AB322801E98D002C4962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471AB312801E98D002C4962 /* AppDelegate.swift */; };
-		0471AB342801E98D002C4962 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471AB332801E98D002C4962 /* SceneDelegate.swift */; };
-		0471AB362801E98D002C4962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471AB352801E98D002C4962 /* ViewController.swift */; };
-		0471AB392801E98D002C4962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0471AB372801E98D002C4962 /* Main.storyboard */; };
 		0471AB3B2801E98E002C4962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0471AB3A2801E98E002C4962 /* Assets.xcassets */; };
 		0471AB3E2801E98E002C4962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0471AB3C2801E98E002C4962 /* LaunchScreen.storyboard */; };
+		0471AB4A2801EA01002C4962 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471AB482801EA01002C4962 /* MainVC.swift */; };
+		0471AB4B2801EA01002C4962 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0471AB492801EA01002C4962 /* MainVC.xib */; };
+		0471AB4D2801EA19002C4962 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471AB4C2801EA19002C4962 /* Question.swift */; };
+		0471AB4F2801EA27002C4962 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471AB4E2801EA27002C4962 /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0471AB2E2801E98D002C4962 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0471AB312801E98D002C4962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0471AB332801E98D002C4962 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0471AB352801E98D002C4962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0471AB382801E98D002C4962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0471AB3A2801E98E002C4962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0471AB3D2801E98E002C4962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0471AB3F2801E98E002C4962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0471AB482801EA01002C4962 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		0471AB492801EA01002C4962 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		0471AB4C2801EA19002C4962 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0471AB4E2801EA27002C4962 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				0471AB312801E98D002C4962 /* AppDelegate.swift */,
-				0471AB332801E98D002C4962 /* SceneDelegate.swift */,
-				0471AB352801E98D002C4962 /* ViewController.swift */,
-				0471AB372801E98D002C4962 /* Main.storyboard */,
+				0471AB472801E9BB002C4962 /* Model */,
+				0471AB462801E9B6002C4962 /* View */,
+				0471AB452801E9AE002C4962 /* Controller */,
 				0471AB3A2801E98E002C4962 /* Assets.xcassets */,
 				0471AB3C2801E98E002C4962 /* LaunchScreen.storyboard */,
 				0471AB3F2801E98E002C4962 /* Info.plist */,
 			);
 			path = QuizApp;
+			sourceTree = "<group>";
+		};
+		0471AB452801E9AE002C4962 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0471AB482801EA01002C4962 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0471AB462801E9B6002C4962 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0471AB492801EA01002C4962 /* MainVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0471AB472801E9BB002C4962 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0471AB4C2801EA19002C4962 /* Question.swift */,
+				0471AB4E2801EA27002C4962 /* QuizBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +152,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0471AB4B2801EA01002C4962 /* MainVC.xib in Resources */,
 				0471AB3E2801E98E002C4962 /* LaunchScreen.storyboard in Resources */,
 				0471AB3B2801E98E002C4962 /* Assets.xcassets in Resources */,
-				0471AB392801E98D002C4962 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +165,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0471AB362801E98D002C4962 /* ViewController.swift in Sources */,
+				0471AB4D2801EA19002C4962 /* Question.swift in Sources */,
 				0471AB322801E98D002C4962 /* AppDelegate.swift in Sources */,
-				0471AB342801E98D002C4962 /* SceneDelegate.swift in Sources */,
+				0471AB4A2801EA01002C4962 /* MainVC.swift in Sources */,
+				0471AB4F2801EA27002C4962 /* QuizBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0471AB372801E98D002C4962 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0471AB382801E98D002C4962 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0471AB3C2801E98E002C4962 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,9 +314,10 @@
 				INFOPLIST_FILE = QuizApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,9 +343,10 @@
 				INFOPLIST_FILE = QuizApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +356,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
