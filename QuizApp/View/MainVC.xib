@@ -11,6 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="QuizApp" customModuleProvider="target">
             <connections>
+                <outlet property="choice1Btn" destination="Ux0-Yy-sT5" id="KMK-e0-NEe"/>
+                <outlet property="choice2Btn" destination="1Ic-Vv-Aff" id="pAI-Sg-nQS"/>
+                <outlet property="choice3Btn" destination="Dhj-z1-qZH" id="pjG-hy-kFn"/>
+                <outlet property="progressBar" destination="Gfd-YI-Qyp" id="Xqi-2v-0My"/>
+                <outlet property="questionLbl" destination="36c-aw-96P" id="Pf8-RK-18r"/>
+                <outlet property="scoreLbl" destination="PKo-Q1-7WE" id="WuB-fM-0zF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,6 +52,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="choice 1" backgroundImage="Rectangle"/>
+                            <connections>
+                                <action selector="answerBtnPressed:" destination="-1" eventType="touchUpInside" id="Pt7-dU-uPD"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ic-Vv-Aff">
                             <rect key="frame" x="0.0" y="628" width="384" height="70"/>
@@ -56,6 +65,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="choice 2" backgroundImage="Rectangle"/>
+                            <connections>
+                                <action selector="answerBtnPressed:" destination="-1" eventType="touchUpInside" id="pRn-N9-1l9"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhj-z1-qZH">
                             <rect key="frame" x="0.0" y="708" width="384" height="70"/>
@@ -66,6 +78,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="choice 3" backgroundImage="Rectangle"/>
+                            <connections>
+                                <action selector="answerBtnPressed:" destination="-1" eventType="touchUpInside" id="oZ2-nA-8We"/>
+                            </connections>
                         </button>
                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-YI-Qyp">
                             <rect key="frame" x="0.0" y="788" width="384" height="16"/>
