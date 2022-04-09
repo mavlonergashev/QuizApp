@@ -8,12 +8,20 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    
+    @IBOutlet weak var scoreLbl: UILabel!
+    @IBOutlet weak var questionLbl: UILabel!
+    @IBOutlet weak var choice1Btn: UIButton!
+    @IBOutlet weak var choice2Btn: UIButton!
+    @IBOutlet weak var choice3Btn: UIButton!
+    @IBOutlet weak var progressBar: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    @IBAction func answerBtnPressed(_ sender: Any) {
+    }
+    
 }
